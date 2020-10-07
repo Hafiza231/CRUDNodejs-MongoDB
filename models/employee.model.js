@@ -8,6 +8,9 @@ const employeeSchema=new mongoose.Schema({
     designation:String
 });
 
+
+
 const employee=new mongoose.model('employees',employeeSchema);
+
 
 export default employee;

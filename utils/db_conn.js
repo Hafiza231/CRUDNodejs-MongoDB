@@ -5,7 +5,8 @@ export default async()=>{
     try{
         const conn=await mongoose.connect(config.db,{
             useNewUrlParser:true,
-            useUnifiedTopology:true
+            useUnifiedTopology:true,
+            useFindAndModify:false
         });
         return (conn);
     }
